@@ -1,289 +1,178 @@
-/*header*/
 * {
     margin: 0;
     padding: 0;
 }
   
-
 a {
     text-decoration: none;
     color: #000000;
 }
 
-.FlexHeader{
-    grid-area: header;
-    display: flex;
-    flex-direction:column;
-    width: 100%;
-    height: 160px;
-    justify-items:center;
-    align-items: center;    
+*{box-sizing: none;}
+.body{
+    font-family: Open Sans Regular', sans-serif;  
 }
 
-.header {
+/*header*/
+.Contenedor1{
+    background-color: #E6332A; 
     width: 100%;
     height: 30px;
-    color: #FFFFFF;
-    background: #E6332A;
+}
+
+.Bienvenidos {
+    color: #FFFFFF;  
     font-family: 'Open Sans Regular', sans-serif;
     font-size: 15px;
-    text-align: center;
     padding-top: 3px;
+    text-align: center;
+    animation-name: titulo;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    animation-play-state: running;    
 }
-.Navbar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 80px;
+@keyframes titulo {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
+.botonbusqueda{
+    color: #57B89A;
+    border-color: #57B89A;}
 
-.logo {
-    display: flex;
-    justify-content: flex-start;
-    width: 120px;
-    margin-top: 10px;
+.logo{
+    width: 100px;
 }
-
-.menu {
-    overflow: hidden;
-    width: 85%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.busqueda{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
-.menu1{
-    color: #000000;
-    font-size: 20px;
+.collapse {
     font-family: 'Open Sans SemiBold', sans-serif;
 }
-
-ul {
-    list-style: none;
+/*mainindex*/
+.banner1 {
+    padding-bottom: 40px;
+}
+.fotosIndex{
+    animation: overflow;
+}
+.indexfotos{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    margin-bottom: 50px;
+}
+/*mainproductos*/
+.gifcookie{
+    background-color: #57B89A;
+}
+.Productostext {
+    height: 30px;
+    color: #000000;
+    font-size: 15px;
+    font-family: 'Open Sans SemiBold', sans-serif;
+    text-align: center;
+    margin-top: 5px;
 }
 
-.box {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-    height: 50px;
-    background:#57B89A;
+.Productos {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 30px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.container-1 {
-    width: 90%;
-    height: 50px;
+.card{
+    border:none;}
+
+.cardcookie{
+    margin-bottom: 30px;
 }
 
-#search {
-    width: 95%;
-    height: 50px;
-    background: #57B89A;
+.productoscont{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*footer*/
+.footer{
+    position: absolute;
+}
+.suscripción1{
+    height: 30px;
+    text-align: center;
+    font-family: 'Open Sans SemiBold', sans-serif;
     font-size: 15px;
     color: black;
-    float: right;
-    border: none;
-    border-bottom: 1px solid black;
+    background-color: #57B89A;
+    margin-top: 20px;
 }
 
-.fas fa-search {
-    position: right;
-    height:50px;
-    margin-right: 20px;
-    margin-top: 20px;
-    z-index: 1;
-    color: #000000;
-    float: right;
+.form {
+    height: 50px;
+    background:#E6332A;
+}
+
+.formlabel {
+    height: 30px;
+    font-size: 15px;
+    font-family: 'Open Sans SemiBold', sans-serif;
+    border-radius: 0%;
+    border-width:0px;
+    margin-right: 10px;
+    padding-left: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.formboton {
+    height: 30px;
+    background-color: #57B89A;
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 15px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.redes{
+    height: 100px;
+    background-color: #E6332A;
+    align-items: center;
+    justify-content:center
+}
+
+i.fab {
+    color: #57B89A;
   }
 
-  
-/*mainindex*/
-.BarritasFlex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center 
+.fa-instagram{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
-
-.Banner1 {
-    width: 100%;
-    height: auto 
+.fa-facebook{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
-
-.barritas1 {
-    width: 90%;
-    height: auto
-}
-
-.barritas2 {
-    width: 90%;
-    height: auto
-}
-
-.barritas3 {
-    width: 90%;
-    height: auto
-}
-
-.barritas4 {
-    width: 90%;
-    height: auto
-}
-
-/*mainproductos*/
-.GrillaProductos {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 30px 300px 30px 350px;
-    grid-template-areas: "Productostext1 Productostext2 Productostext3 Productostext4"
-                         "Productos1     Productos2     Productos3     Productos4 " 
-                         "Productostext5 Productostext6 Productostext7 Productostext8"
-                         "Productos5     Productos6     Productos7     Productos8 ";    
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;    
-    justify-items:center;
-    align-items: center;                                      
-    }
-
-.Productostext1 {
-    grid-area: Productostext1;
-    width: 80%;
-    height: 30px;
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 15px;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    text-align: center;
-    margin-top: 5px;
-}
-
-.Productostext2 {
-    grid-area: Productostext2;
-    width: 80%;
-    height: 30px;
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 15px;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    text-align: center;
-    margin-top: 5px;
-}
-.Productostext3 {
-    grid-area: Productostext3;
-    width: 80%;
-    height: 30px;
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 15px;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    text-align: center;
-    margin-top: 5px;
-}
-.Productostext4 {
-    grid-area: Productostext4;
-    width: 80%;
-    height: 30px;
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 15px;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    text-align: center;
-    margin-top: 5px;
-}
-.Productostext5 {
-    grid-area: Productostext5;
-    width: 80%;
-    height: 30px;
-    background-color: #FFFFFF;
-    color: #000000;
-    font-size: 15px;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    text-align: center;
-    margin-top: 5px;   
-}
-.Productostext6 {
-    grid-area: Productostext6;
-    width: 80%;
-    height: 30px;
-    background-color: #FFFFFF;
-    color: #000000;
-    font-size: 15px;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    text-align: center;
-    margin-top: 5px;    
-}
-.Productostext7 {
-    grid-area: Productostext7;
-    width: 80%;
-    height: 30px;
-    background-color: #FFFFFF;
-    color: #000000;
-    font-size: 15px;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    text-align: center;
-    margin-top: 5px; 
-}
-.Productostext8 {
-    grid-area: Productostext8;
-    width: 80%;
-    height: 30px;
-    background-color: #FFFFFF;
-    color: #000000;
-    font-size: 15px;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    text-align: center;
-    margin-top: 5px;
-}
-
-.Productos1 {
-    grid-area: Productos1;
-    width: 90%;
-    height: auto;
-    background-color: #FFFFFF;
-}
-
-.Productos2 {
-    grid-area: Productos2;
-    width: 90%;
-    height: auto;
-    background-color: #FFFFFF;
-}
-.Productos3 {
-    grid-area: Productos3;
-    width: 90%;
-    height: auto;
-    background-color: #FFFFFF;
-}
-.Productos4 {
-    grid-area: Productos4;
-    width: 90%;
-    height: auto;
-    background-color: #FFFFFF;
-}
-.Productos5 {
-    grid-area: Productos5;
-    width: 90%;
-    height: auto;
-    background-color: #FFFFFF;
-}
-.Productos6 {
-    grid-area: Productos6;
-    width: 90%;
-    height: auto;
-    background-color: #FFFFFF;
-}
-.Productos7 {
-    grid-area: Productos7;
-    width: 90%;
-    height: auto;
-    background-color: #FFFFFF;
-}
-.Productos8 {
-    grid-area: Productos8;
-    width: 90%;
-    height: auto;
-    background-color: #FFFFFF;
+.fa-whatsapp{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 /*mainrecetas*/
@@ -291,7 +180,7 @@ ul {
         display: grid;
         width: 100%;
         grid-template-columns: 30% 20% 50%;
-        grid-template-rows: 30px 300px 30px 300px;
+        grid-template-rows: 50px 320px 50px 300px;
         grid-template-areas: "CookiesAvena   CookiesAvena   CookiesAvena"
                              "Cookie1        Ingredientes1  Receta1" 
                              "CookiesNaranja CookiesNaranja CookiesNaranja"
@@ -310,6 +199,7 @@ ul {
         font-size: 20px;
         text-align: left;
         margin-left: 20px;
+        margin-bottom: 20px;
     }
     
     .CookiesdeNaranja {
@@ -319,6 +209,7 @@ ul {
         font-size: 20px;
         text-align: left;
         margin-left: 20px;
+        margin-bottom: 20px;
     }
     
     .Cookie1{
@@ -326,6 +217,8 @@ ul {
         width:80%;
         height: auto;
         margin-left: 30px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 20px;
     }    
     
     .Cookie2{
@@ -333,6 +226,8 @@ ul {
         width:80%;
         height: auto;
         margin-left: 30px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 20px;
     }
     
     .Ingredientes1{
@@ -375,66 +270,27 @@ ul {
     
 
 /*mainnosotros*/
-.GrillaNosotros{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 400px 50px 120px 50px 50px;
-    grid-template-areas: "Banner2"
-                         "Nosotros1" 
-                         "Nosotrostext1"
-                         "Nosotros2" 
-                         "Nosotrostext2";    
-    grid-row-gap: 10px;   
-    background-color: #FFFFFF;
+.Banner2{
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
-
-.Banner2 {
-    grid-area: Banner2;
-    width: 100%;
-    height: auto 
-}
-
-.Nosotros1{
-    grid-area: Nosotros1;
-    width: 80%;   
-    text-align: left;
+.Nosotros{  
     color: #000000;
     font-family: 'Open Sans SemiBold', sans-serif;
     font-size: 20px;
     margin-top: 20px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
-.Nosotros2{
-    grid-area: Nosotros2;
-    width: 80%;   
-    text-align: left;
-    color: #000000;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-.Nosotrostext1{
-    grid-area: Nosotrostext1;
-    width: 80%;
-    text-align: left;
+.Nosotrostext{
     color: #000000;
     font-family: 'Open Sans Regular', sans-serif;
     font-size: 15px;
     margin-left: 10px;
-}
-
-.Nosotrostext2{
-    grid-area: Nosotrostext2;
-    width: 80%;
-    text-align: left;
-    color: #000000;
-    font-family: 'Open Sans Regular', sans-serif;
-    font-size: 15px;
-    margin-left: 10px;    
+    margin-right: 10px;
+    text-align: justify;
 }
 
 /*maincontacto*/
@@ -477,7 +333,7 @@ ul {
     background: #57B89A;
     border: none;
     font-family: 'Open Sans Regular', sans-serif;
-    font-size: 12pt;
+    font-size: 15pt;
     color: #ffffff;
 }
 .Formulario1 h1.formtext1{
@@ -501,7 +357,7 @@ ul {
     background: #57B89A;
     border: none;
     font-family: 'Open Sans Regular', sans-serif;
-    font-size: 12pt;
+    font-size: 15pt;
     color: #ffffff;
 }
 
@@ -527,7 +383,7 @@ ul {
     background: #57B89A;
     border: none;
     font-family: 'Open Sans Regular', sans-serif;
-    font-size: 12pt;
+    font-size: 14pt;
     color: #ffffff;
 }
 
@@ -578,225 +434,17 @@ ul {
     margin-top: 100px;
     margin-left: 20px;
 }
-
-/*footer*/
-.GrillaFooter {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20px 70px 80px;
-    grid-template-areas: "suscripcion suscripcion suscripcion" 
-                         "form        form        form"
-                         "redes       redes       redes";                                            
-}
-
-.suscripción {
-    grid-area: suscripcion;
-    width: 100%;
-    color: #000000;
-    background: #57B89A;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    font-size: 15px;
-    text-align: center;
-}
-
-.form {
-    grid-area: form;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    background:#E6332A;
-    padding-bottom: 10px;
-    padding-top: 20px;
-}
-
-.formlabel {
-    width: 30%;
-    height: 30px;
-    font-size: 15px;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    border-radius: 0%;
-    border-width:0px;
-    margin-right: 10px;
-    padding-left: 10px;
-    border: none;
-}
-
-.formboton {
-    width: 5%;
-    height: 30px;
-    background-color: #57B89A;
-    font-family: 'Open Sans Regular', sans-serif;
-    font-size: 15px;
-    margin-left: 5px;
-}
-
-.redes {
-    grid-area: redes;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #E6332A;
-}
-
-.logosredes {
-    width: 50px;
-    height: 50px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-}
 /*xsmall*/
-@media only screen and (max-width: 480px)
-{
-    .FlexHeader{
-       height: 90px;
-    }
-
-    .header {
-        height: 20px;
+  @media only screen and (max-width: 480px)
+  {
+    .suscripción1 {
+        height: 20px;;
         font-size: 12px;
-    }
-    
-    .logo{
-        width: 60px;
-        margin-top: 0px;
-        margin-left: 5px;
-    }
-    .menu{
-        justify-content: space-evenly;
-        padding-left: 20px;
-        margin-left: 10px;
-    }
-    .menu1{
-        font-size: 12px;
-    } 
-
-    .Navbar{
-        height: 40px;
-    }
-
-    .box {
-        height: 30px;
-    }
-
-    .container-1 {
-        height: 30px;
-    }
-    #search {
-        height: 30px;
-        font-size: 8px;
-        border-bottom: 0.5px;
-    }
-    
-    .fas fa-search {
-        height: 10px;
-        margin-top: 5px;
-    }
-    
-    .GrillaFooter {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 18px 50px 50px;                                        
-    }
-    
-    .suscripción {
-        font-size: 10px;
-    }
-    
-    .form {
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 8px;
-        padding-top: 8px;
-    }
-    
-    .formlabel {
-        width: 30%;
-        height: 40px;
-        font-size: 10px;
-        margin-bottom: 8px;
-        margin-right: 0%;
-    }
-    
-    .formboton {
-        width: 20%;
-        height: 20px;
-        font-size: 10px;
-        margin-right: 0%;
-    }
-    .redes{
-        height: 50px;
-    }
-    .logosredes {
-        width: 30px;
-        height: 30px;
-        padding-bottom: 0px;
-       padding-top: 0px;
-    }
-        
-    .GrillaProductos {
-        grid-template-rows: 25px 115px 25px 130px;
-        grid-column-gap: 1px;
-        grid-row-gap: 1px;  
-    }
-    
-    .Productostext1 {
-        width: 90%;
-        height: 25px;
-        font-size: 8px;
-        padding-top: 5px;
-    }
-    
-    .Productostext2 {
-        width: 90%;
-        height: 25px;
-        font-size: 8px;
-        padding-top: 5px;
-    }
-    .Productostext3 {
-        width: 90%;
-        height: 25px;
-        font-size: 8px;
-        padding-top: 5px;
-    }
-    .Productostext4 {
-        width: 90%;
-        height: 25px;
-        font-size: 8px;
-        padding-top: 5px;
-    }
-    .Productostext5 {
-        width: 90%;
-        height: 25px;
-        font-size: 8px;
-        padding-top: 5px;
-    }
-    .Productostext6 {
-        width: 90%;
-        height: 25px;
-        font-size: 8px;
-        padding-top: 5px;
-    }
-    .Productostext7 {
-        width: 90%;
-        height: 25px;
-        font-size: 8px;
-        padding-top: 5px;
-    }
-    .Productostext8 {
-        width: 90%;
-        height: 25px;
-        font-size: 8px;
-        padding-top: 5px;
     }
     
     .GrillaRecetas {
         grid-template-columns: 40% 60%;
-        grid-template-rows: 30px 150px 200px 30px 150px 150px;
+        grid-template-rows: 30px 150px 200px 50px 150px 150px;
         grid-template-areas: "CookiesAvena11  CookiesAvena11"
                              "Cookie11        Ingredientes11"
                              "Receta11        Receta11" 
@@ -812,6 +460,7 @@ ul {
         font-size: 14px;
         text-align: left;
         margin-left: 20px;
+        margin-bottom: 10px;
     }
     
     .CookiesdeNaranja {
@@ -819,6 +468,7 @@ ul {
         font-size: 14px;
         text-align: left;
         margin-left: 20px;
+        margin-bottom: 10px;
     }
 
   .Cookie1{
@@ -860,44 +510,7 @@ ul {
         font-size: 10px;
         margin-left: 20px;
     }
-    .GrillaNosotros{
-        grid-template-rows: 135px 25px 180px 25px 70px;
-        align-content: center;
-        justify-content: center;
-    }
-    
-    .Banner2 {
-        grid-area: Banner2;
-        width: 100%;
-        height: auto 
-    }
-    
-    .Nosotros1{
-        font-size: 14px;
-        margin-left: 10px;
-        margin-top: 0px;
-    }
-    
-    .Nosotros2{
-        font-size: 14px;
-        margin-top: 0px;
-        margin-left: 10px;
-    }
-    
-    .Nosotrostext1{
-        width: 90%;
-        font-size: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        text-align: justify;
-    }
-    
-    .Nosotrostext2{
-        width: 90%;
-        font-size: 10px;
-        margin-left: 10px; 
-        margin-right: 10px;   
-        text-align: justify;
+
     }
     .GrillaMainContacto{
         grid-template-columns: 15% 65% 20%;
@@ -971,165 +584,9 @@ ul {
         margin-right: 10px;
     }
 }
-
 /*small*/
 @media only screen and (min-width: 481px) and (max-width: 600px) {
-    .menu1{
-        font-size: 16px;}
-
-     .logo{
-        width: 90px;
-        margin-top: 20px;
-    }
-    .FlexHeader{
-        height: 150px;
-     }
-
-    .BarritasFlex{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 350px 350px;
-            grid-template-areas: "barritas1 barritas4"
-                                 "barritas2 barritas3";
-            justify-content: stretch;
-            align-content: center;
-            grid-row-gap: 10px;   
-            grid-column-gap: 10px;  
-        }
-
-    .barritas1 {
-        grid-area: barritas1;
-        width: 100%;
-        height: 350px;
-    }
-    .barritas2 {
-        grid-area: barritas2;
-        width: 100%;
-        height: 350px;
-    }
-    .barritas3 {
-        grid-area: barritas3;
-        width: 100%;
-        height: 350px;
-    }
-    .barritas4 {
-        grid-area: barritas4;
-        width: 100%;
-        height: 350px;
-    }
-
-    .box {
-        height: 40px;
-    }
-
-    .container-1 {
-        height: 40px;
-    }
-    #search {
-        height: 40px;
-        font-size: 10px;
-        border-bottom: 1px;
-    }
-    
-    .fas fa-search {
-        height: 10px;
-        margin-top: 15px;
-    }
-      
-    .formboton {
-        width: 15%;
-    }
-
-    .GrillaProductos {    
-        grid-template-rows: 20px 135px 20px 160px;
-        grid-column-gap: 3px;
-        grid-row-gap: 3px; 
-    }
-    
-    .Productostext1 {
-        width: 90%;
-        height: 20px;
-        font-size: 10px;
-        margin-top: 5px;
-    }
-    
-    .Productostext2 {
-        width: 90%;
-        height: 20px;
-        font-size: 10px;
-        margin-top: 5px;
-    }
-    .Productostext3 {
-        width: 90%;
-        height: 20px;
-        font-size: 10px;
-        margin-top: 5px;
-    }
-    .Productostext4 {
-        width: 90%;
-        height: 20px;
-        font-size: 10px;
-        margin-top: 5px;
-    }
-    .Productostext5 {
-        width: 90%;
-        height: 20px;
-        font-size: 10px;
-        margin-top: 5px;
-    }
-    .Productostext6 {
-        width: 90%;
-        height: 20px;
-        font-size: 10px;
-        margin-top: 5px;
-    }
-    .Productostext7 {
-        width: 90%;
-        height: 20px;
-        font-size: 10px;
-        margin-top: 5px; 
-    }
-    .Productostext8 {
-        width: 90%;
-        height: 20px;
-        font-size: 10px;
-        margin-top: 5px;
-    }
-    
-    .Productos1 {
-        width: 95%;
-    }
-
-    .Productos2 {
-        width: 95%;
-      }
-    .Productos3 {
-        width: 95%;
-    }
-    .Productos4 {
-        width: 95%;
-    }
-    .Productos5 {
-        width: 95%;
-    }
-    .Productos6 {
-        width: 95%;
-    }
-    .Productos7 {
-        width: 95%;
-    }
-    .Productos8 {
-        width: 95%;
-    }
- .GrillaFooter {
-    grid-template-rows: 20px 50px 55px;                                          
-}   
-.logosredes {
-    width: 40px;
-    height: 40px;
-    padding-bottom: 5px;
-    padding-right: 5px;
-}
+                                          
 .GrillaRecetas {
     grid-template-columns: 40% 60%;
     grid-template-rows: 30px 200px 180px 30px 200px 140px;
@@ -1197,38 +654,6 @@ ul {
     margin-left: 20px;
 }
 
-.GrillaNosotros{
-    grid-template-rows: 190px 40px 170px 40px 60px;
-    grid-row-gap: 10px;
-    align-content: center;
-    justify-content: center;
-}
-
-.Nosotros1{
-    font-size: 16px;
-    margin-top: 8px;
-    margin-left: 15px;
-}
-
-.Nosotros2{
-    font-size: 16px;
-    margin-top: 8px;
-    margin-left: 15px;
-}
-
-.Nosotrostext1{
-    width: 95%;
-    font-size: 12px;
-    margin-left: 15px;
-    text-align: justify;
-}
-
-.Nosotrostext2{
-    width: 95%;
-    font-size: 12px;
-    margin-left: 15px;
-    text-align: justify;
-}
 .Contact {
     font-size: 16px;
     margin-left: 20px;
@@ -1276,38 +701,7 @@ ul {
 
 /*medium*/
 @media only screen and (min-width: 601px) and (max-width:900px){
-    .GrillaProductos {
-        grid-template-rows: 30px 180px 30px 220px;
-        grid-column-gap: 1px;
-        grid-row-gap: 1px;  
-    }
     
-    .Productostext1 {
-        font-size: 12px;
-    }
-    
-    .Productostext2 {
-        font-size: 12px;
-    }
-    .Productostext3 {
-        font-size: 12px;
-    }
-    .Productostext4 {
-        font-size: 12px;
-    }
-    .Productostext5 {
-        font-size: 12px;
-        
-    }
-    .Productostext6 {
-        font-size: 12px
-    }
-    .Productostext7 {
-        font-size: 12px;
-    }
-    .Productostext8 {
-        font-size: 12px;
-    }
     .formboton {
         width: 10%;
     }    
@@ -1363,38 +757,16 @@ ul {
     
 
 /*mainnosotros*/
-.GrillaNosotros{
-    grid-template-rows: 250px 50px 200px 50px 100px;
-    grid-row-gap: 10px;   
-}
 
-.Nosotros1{
-    width: 80%;   
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-.Nosotros2{
-
-    width: 80%;   
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-.Nosotrostext1{
-    width: 95%;
-    margin-left: 10px;
-    text-align: justify;
-}
-
-.Nosotrostext2{
-    width: 95%;
-    margin-left: 10px;    
-    text-align: justify;
 }
 .menu1{
     font-size: 16px;
 }
+}
+
+
+@media only screen and (min-width: 992px){
+    .navbar-expand-lg{
+        flex-wrap: none;
+    }
 }
