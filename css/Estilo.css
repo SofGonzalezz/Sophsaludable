@@ -214,8 +214,10 @@ a {
 }   
 .Receta {
     color: #000000;
-    font-family: 'Open Sans Regular', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .cardreceta{
     border-color: #57B89A;
