@@ -2,24 +2,42 @@
     margin: 0;
     padding: 0;
 }
-  
 a {
     text-decoration: none;
     color: #000000;
 }
-
 *{box-sizing: none;}
+.container-fluid{
+    padding-left:0px;
+    padding-right: 0px;
+}
 .body{
-    font-family: Open Sans Regular', sans-serif;  
+    font-family: 'Open Sans', sans-serif;  
+}
+.h1{
+    font-family: 'Open Sans SemiBold', sans-serif;
+    font-size: 20px;
+}
+.h2{
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 15px;
+}
+.h3{
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 14px;
+}
+.h4{
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 12px;
 }
 
+/*for all pages*/
 /*header*/
-.Contenedor1{
+.contenedorHeader{
     background-color: #E6332A; 
     width: 100%;
     height: 30px;
 }
-
 .Bienvenidos {
     color: #FFFFFF;  
     font-family: 'Open Sans Regular', sans-serif;
@@ -41,10 +59,17 @@ a {
         transform: translateX(-100%);
     }
 }
-.botonbusqueda{
+#botonbusqueda{
+    font-size: 15px;
+    font-family: 'Open Sans SemiBold', sans-serif;
     color: #57B89A;
+    border-color: #1F5458;}
+#botonbusqueda:hover{
+    font-size: 15px;
+    font-family: 'Open Sans SemiBold', sans-serif;
+    color: #ffffff;
+    background-color: #1F5458;
     border-color: #57B89A;}
-
 .logo{
     width: 100px;
 }
@@ -54,26 +79,94 @@ a {
     padding-left: 30px;
     padding-right: 30px;
 }
-.collapse {
+
+/*nav*/
+#navcolor{
+    font-size: 15px;
     font-family: 'Open Sans SemiBold', sans-serif;
 }
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link{
+    color: #57B89A;
+    font-family: 'Open Sans SemiBold', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #E6332A;
+    font-family: 'Open Sans SemiBold', sans-serif;
+}
+.button:focus:not(:focus-visible) {
+    outline: 0px;}
+.navbar-toggler:focus{
+    text-decoration: none;}
+
+/*footer*/
+.footergrande{
+    background-color: #57B89A;
+}
+.navegadorFooter{
+    height: 100px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.textonavegador{
+    font-family: 'Open Sans SemiBold', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+.textonavegador.active{
+    color: #E6332A;
+    font-family: 'Open Sans SemiBold', sans-serif;
+}
+.linefooter{
+    line-height: 1.5px;
+    color: #FFFFFF;
+}
+.redesSociales{
+    text-align: center;
+}
+.parrafoFooter{
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.fab {
+    color: #ffffff;
+ }
+.far {
+    color: #ffffff;
+}
+.iconoredes{
+    font-size: 30px;
+    padding: auto;
+}
+.Copyright{
+    background-color: #1F5458;
+}
+
 /*mainindex*/
 .banner1 {
     padding-bottom: 40px;
 }
-.fotosIndex{
-    animation: overflow;
-}
 .indexfotos{
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 12px;
-    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 30px;
 }
+.indexfotos:hover{
+   transform: scale(1.2);
+}
+
 /*mainproductos*/
-.gifcookie{
+.gif{
     background-color: #57B89A;
+    margin-bottom: 50px;
 }
 .Productostext {
     height: 30px;
@@ -83,191 +176,68 @@ a {
     text-align: center;
     margin-top: 5px;
 }
-
-.Productos {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 30px;
-    margin-right: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.card{
-    border:none;}
-
 .cardcookie{
     margin-bottom: 30px;
+    border:none;
 }
-
-.productoscont{
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-/*footer*/
-.footer{
-    position: absolute;
-}
-.suscripción1{
-    height: 30px;
-    text-align: center;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    font-size: 15px;
-    color: black;
-    background-color: #57B89A;
-    margin-top: 20px;
-}
-
-.form {
-    height: 50px;
-    background:#E6332A;
-}
-
-.formlabel {
-    height: 30px;
-    font-size: 15px;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    border-radius: 0%;
-    border-width:0px;
-    margin-right: 10px;
+.fotosproducto{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
     padding-left: 10px;
-    margin-top:10px;
-    margin-bottom: 10px;
-    border: none;
-}
-
-.formboton {
-    height: 30px;
-    background-color: #57B89A;
-    font-family: 'Open Sans Regular', sans-serif;
-    font-size: 15px;
-    margin-top:10px;
-    margin-bottom: 10px;
-}
-
-.redes{
-    height: 100px;
-    background-color: #E6332A;
-    align-items: center;
-    justify-content:center
-}
-
-i.fab {
-    color: #57B89A;
-  }
-
-.fa-instagram{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-.fa-facebook{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-.fa-whatsapp{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 /*mainrecetas*/
-.GrillaRecetas{
-        display: grid;
-        width: 100%;
-        grid-template-columns: 30% 20% 50%;
-        grid-template-rows: 50px 320px 50px 300px;
-        grid-template-areas: "CookiesAvena   CookiesAvena   CookiesAvena"
-                             "Cookie1        Ingredientes1  Receta1" 
-                             "CookiesNaranja CookiesNaranja CookiesNaranja"
-                             "Cookie2        Ingredientes2  Receta2";    
-        grid-row-gap: 10px;   
-        grid-column-gap: 10px;   
-        justify-content: center;
-        align-items: center;
-        background-color: #FFFFFF;
-    }
-    
-    .CookiesdeAvena {
-        grid-area: CookiesAvena;
-        color: #e6332a;
-        font-family: 'Open Sans SemiBold', sans-serif;
-        font-size: 20px;
-        text-align: left;
-        margin-left: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .CookiesdeNaranja {
-        grid-area: CookiesNaranja;
-        color: #E6332A;
-        font-family: 'Open Sans SemiBold', sans-serif;
-        font-size: 20px;
-        text-align: left;
-        margin-left: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .Cookie1{
-        grid-area: Cookie1;
-        width:80%;
-        height: auto;
-        margin-left: 30px;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom: 20px;
-    }    
-    
-    .Cookie2{
-        grid-area: Cookie2;
-        width:80%;
-        height: auto;
-        margin-left: 30px;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom: 20px;
-    }
-    
-    .Ingredientes1{
-        grid-area: Ingredientes1;
-        width: 70%;
-        color: #000000;
-        font-family: 'Open Sans Semibold', sans-serif;
-        font-size: 15px;
-        list-style:circle;
-        margin-left: 30px;
-    }
-    
-    .Ingredientes2{
-        grid-area: Ingredientes2;
-        width: 70%;
-        color: #000000;
-        font-family: 'Open Sans Semibold', sans-serif;
-        font-size: 15px;
-        list-style:circle;
-        margin-left: 30px;
-    }
-    
-    .Receta1 {
-        grid-area: Receta1;
-        width: 90%;
-        color: #000000;
-        font-family: 'Open Sans Regular', sans-serif;
-        font-size: 15px;
-        margin-left: 20px;
-    }
-    
-    .Receta2 {
-        grid-area: Receta2;
-        width: 90%;
-        color: #000000;
-        font-family: 'Open Sans Regular', sans-serif;
-        font-size: 15px;
-        margin-left: 20px;
-    }
-    
+.recetaTitulo {
+    color: #e6332a;
+    font-family: 'Open Sans SemiBold', sans-serif;
+    font-size: 20px;
+}
+.Cookie{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}    
+.Ingredientes{
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    list-style:circle;
+}   
+.Receta {
+    color: #000000;
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 15px;
+}
+.cardreceta{
+    border-color: #57B89A;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+.recetasContenedor{
+    justify-items: center;
+    align-items: center;
+}
+#botonreceta{  
+    font-size: 15px;   
+    font-family: 'Open Sans SemiBold', sans-serif;
+    color: #57B89A;
+    border-color: #1F5458;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)
+}
+#botonreceta:hover{
+    font-size: 15px;
+    font-family: 'Open Sans SemiBold', sans-serif;
+    color: #ffffff;
+    background-color: #1F5458;
+    border-color: #57B89A;
+}
 
 /*mainnosotros*/
 .Banner2{
@@ -276,14 +246,13 @@ i.fab {
     padding-right: 0px;
 }
 .Nosotros{  
-    color: #000000;
+    color: #E6332A;
     font-family: 'Open Sans SemiBold', sans-serif;
     font-size: 20px;
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
 }
-
 .Nosotrostext{
     color: #000000;
     font-family: 'Open Sans Regular', sans-serif;
@@ -294,23 +263,6 @@ i.fab {
 }
 
 /*maincontacto*/
-.GrillaMainContacto{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 50px 60px 60px 60px 150px;
-    grid-template-areas: "Contacto Contacto    ."
-                         ".        Formulario1 . "
-                         ".        Formulario2 . " 
-                         ".        Formulario3 . "
-                         ".        Formulario4  Formulario5";
-    grid-row-gap: 10px;   
-    grid-column: 10px;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-}
-
 .Contact {
     grid-area: Contacto;
     color: #E6332A;
@@ -318,453 +270,34 @@ i.fab {
     font-size: 20px;
     margin-left: 20px;
 }
-
-.Formulario1{
-    grid-area: Formulario1;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    width: 100%;
-    background-color: #FFFFFF;
-}
-.Formulario1 input.formlabel1{
-    width: 70%;
-    height: 50px;
-    background: #57B89A;
-    border: none;
-    font-family: 'Open Sans Regular', sans-serif;
-    font-size: 15pt;
-    color: #ffffff;
-}
-.Formulario1 h1.formtext1{
-    width:30%;
+.formtext{
     font-size: 15px;
     font-family: 'Open Sans SemiBold', sans-serif;
     margin-top: 15px;
 }
-
-.Formulario2{
-    grid-area: Formulario2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    background-color: #FFFFFF;
-}
-.Formulario2 input.formlabel1{
-    width: 70%;
-    height: 50px;
-    background: #57B89A;
-    border: none;
-    font-family: 'Open Sans Regular', sans-serif;
-    font-size: 15pt;
-    color: #ffffff;
-}
-
-.Formulario2 h1.formtext1{
-    width:30%;
+.formboton{
     font-size: 15px;
     font-family: 'Open Sans SemiBold', sans-serif;
-    margin-top: 15px;
+    color: #57B89A;
+    border-color: #1F5458;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)
+}
+.formboton:hover{
+   font-size: 15px;
+   font-family: 'Open Sans SemiBold', sans-serif;
+   color: #ffffff;
+   background-color: #1F5458;
+   border-color: #57B89A;
 }
 
-.Formulario3{
-    grid-area: Formulario3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    background-color: #FFFFFF;
-}
-
-.Formulario3 input.formlabel1{
-    width: 70%;
-    height: 50px;
-    background: #57B89A;
-    border: none;
-    font-family: 'Open Sans Regular', sans-serif;
-    font-size: 14pt;
-    color: #ffffff;
-}
-
-.Formulario3 h1.formtext1{
-    width:30%;
-    font-size: 15px;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    margin-top: 15px;
-}
-
-.Formulario4{
-    grid-area: Formulario4;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    width: 100%;
-    background-color: #FFFFFF;
-}
-
-.Formulario4 h1.formtext2{
-    width:30%;
-    font-size: 15px;
-    font-family: 'Open Sans SemiBold', sans-serif;
-    margin-top: 15px;
-}
-
-.Formulario4 textarea.formconsulta{
-    width: 70%;
-    height: 120px;
-    background: #57B89A;
-    border: none;
-    font-family: 'Open Sans Regular', sans-serif;
-    font-size: 12pt;
-    color: #ffffff;
-}
-
-.Formulario5{
-    grid-area: Formulario5;
-    width: 100%;
-    background-color: #FFFFFF;
-}
-.Formulario5 input.formboton2{
-    width: 100px;
-    height: 20px;
-    background-color: #57B89A;
-    font-family: 'Open Sans Regular', sans-serif;
-    font-size: 10px;
-    margin-top: 100px;
-    margin-left: 20px;
-}
 /*xsmall*/
-  @media only screen and (max-width: 480px)
-  {
-    .suscripción1 {
-        height: 20px;;
-        font-size: 12px;
-    }
-    
-    .GrillaRecetas {
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 30px 150px 200px 50px 150px 150px;
-        grid-template-areas: "CookiesAvena11  CookiesAvena11"
-                             "Cookie11        Ingredientes11"
-                             "Receta11        Receta11" 
-                             "CookiesNaranja11 CookiesNaranja11"
-                             "Cookie22         Ingredientes22"
-                             "Receta22        Receta22";    
-        grid-row-gap: 2px;   
-        grid-column-gap: 2px;  
-    }
-    
-    .CookiesdeAvena {
-        grid-area: CookiesAvena11;
-        font-size: 14px;
-        text-align: left;
-        margin-left: 20px;
-        margin-bottom: 10px;
-    }
-    
-    .CookiesdeNaranja {
-        grid-area: CookiesNaranja11;
-        font-size: 14px;
-        text-align: left;
-        margin-left: 20px;
-        margin-bottom: 10px;
-    }
-
-  .Cookie1{
-        grid-area: Cookie11;
-        width:90%;
-        margin-left: 0px;
-    }    
-    
-    .Cookie2{
-        grid-area: Cookie22;
-        width:90%;
-        margin-left: 0px;
-    }
-    
-    .Ingredientes1{
-        grid-area: Ingredientes11;
-        width: 80%;
-        font-size: 10px;
-        margin-left: 15px;
-    }
-   
-    .Ingredientes2{
-        grid-area: Ingredientes22;
-        width: 80%;
-        font-size: 10px;
-        margin-left: 15px;
-    }
-    
-    .Receta1 {
-        grid-area: Receta11;
-        width: 90%;
-        font-size: 10px;
-        margin-left: 20px;
-    }
-    
-    .Receta2 {
-        grid-area: Receta22;
-        width: 90%;
-        font-size: 10px;
-        margin-left: 20px;
-    }
-
-    }
-    .GrillaMainContacto{
-        grid-template-columns: 15% 65% 20%;
-    }
-        
-    .Contact {
-        font-size: 14px;
-        margin-left: 20px;
-    }
-    
-    .Formulario1{
-        grid-area: Formulario1;
-        display: flex;
-        flex-direction:row;
-        justify-content: space-evenly;
-        width: 100%;
-        background-color: #FFFFFF;
-    }
-    .Formulario1 input.formlabel1{
-        width: 65%;
-        height: 50px;
-        font-size: 10pt;
-    }
-    .Formulario1 h1.formtext1{
-        width:35%;
-        font-size: 10px;
-        margin-top: 15px;
-    }
-    .Formulario2 input.formlabel1{
-        width: 65%;
-        height: 50px;
-        font-size: 10pt;
-    }
-    
-    .Formulario2 h1.formtext1{
-        width:35%;
-        font-size: 10px;
-        margin-top: 15px;
-    }
-        
-    .Formulario3 input.formlabel1{
-        width: 65%;
-        height: 50px;
-        font-size: 10pt;
-    }
-    
-    .Formulario3 h1.formtext1{
-        width:35%;
-        font-size: 10px;
-        margin-top: 15px;
-    }
-       
-    .Formulario4 h1.formtext2{
-        width:35%;
-        font-size: 10px;
-        margin-top: 5px;
-    }
-    
-    .Formulario4 textarea.formconsulta{
-        width: 65%;
-        height: 100px;
-        font-size: 10pt;
-    }
-    
-    .Formulario5 input.formboton2{
-        width: 80px;
-        height: 20px;
-        font-size: 8px;
-        margin-top: 100px;
-        margin-left: 10px;
-        margin-right: 10px;
+  @media only screen and (max-width: 480px){
+    .Contact{
+    font-size: 15px;
     }
 }
-/*small*/
-@media only screen and (min-width: 481px) and (max-width: 600px) {
-                                          
-.GrillaRecetas {
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 30px 200px 180px 30px 200px 140px;
-    grid-template-areas: "CookiesAvena12  CookiesAvena12"
-                         "Cookie12        Ingredientes12"
-                         "Receta12        Receta12" 
-                         "CookiesNaranja12 CookiesNaranja12"
-                         "Cookie23         Ingredientes23"
-                         "Receta23        Receta23";    
-    grid-row-gap: 5px;   
-    grid-column-gap: 5px;  
-}
-
-.CookiesdeAvena {
-    grid-area: CookiesAvena12;
-    font-size: 16px;
-    text-align: left;
-    margin-left: 20px;
-}
-
-.CookiesdeNaranja {
-    grid-area: CookiesNaranja12;
-    font-size: 16px;
-    text-align: left;
-    margin-left: 20px;
-}
-
-.Cookie1{
-    grid-area: Cookie12;
-    width:90%;
-    margin-left: 10px;
-}    
-
-.Cookie2{
-    grid-area: Cookie23;
-    width:90%;
-    margin-left: 10px;
-}
-
-.Ingredientes1{
-    grid-area: Ingredientes12;
-    width: 90%;
-    font-size: 12px;
-    margin-left: 15px;
-}
-
-.Ingredientes2{
-    grid-area: Ingredientes23;
-    width: 90%;
-    font-size: 12px;
-    margin-left: 15px;
-}
-
-.Receta1 {
-    grid-area: Receta12;
-    width: 90%;
-    font-size: 12px;
-    margin-left: 20px;
-}
-
-.Receta2 {
-    grid-area: Receta23;
-    width: 90%;
-    font-size: 12px;
-    margin-left: 20px;
-}
-
-.Contact {
-    font-size: 16px;
-    margin-left: 20px;
-}
-
-.Formulario1 input.formlabel1{
-    font-size: 12pt;
-}
-.Formulario1 h1.formtext1{
-    font-size: 12px;
-    margin-top: 10px;
-}
-.Formulario2 input.formlabel1{
-    font-size: 12pt;
-}
-
-.Formulario2 h1.formtext1{
-    font-size: 12px;
-    margin-top: 10px;
-}
     
-.Formulario3 input.formlabel1{
-    font-size: 12pt;
-}
-
-.Formulario3 h1.formtext1{
-    font-size: 12px;
-    margin-top: 10px;
-}
-   
-.Formulario4 h1.formtext2{
-    font-size: 12px;
-    margin-top: 10px;
-}
-
-.Formulario4 textarea.formconsulta{
-    font-size: 12pt;
-}
-
-.Formulario5 input.formboton2{
-    font-size: 12px;
-    margin-top: 100px;
-}
-}
-
-/*medium*/
-@media only screen and (min-width: 601px) and (max-width:900px){
-    
-    .formboton {
-        width: 10%;
-    }    
-    .GrillaRecetas{
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 30px 250px 220px 30px 250px 150px;
-        grid-template-areas: "CookiesAvena   CookiesAvena   "
-                             "Cookie1        Ingredientes1  " 
-                             "Receta1        Receta1         "
-                             "CookiesNaranja CookiesNaranja "
-                             "Cookie2        Ingredientes2 "
-                             "Receta2         Receta2";    
-           
-    }
-    
-    .CookiesdeAvena {
-        font-size: 18px;
-        margin-left: 50px;
-    }
-    
-    .CookiesdeNaranja {
-        font-size: 18px;
-        margin-left: 50px;
-    }
-    
-    .Cookie1{
-        margin-left: 20px;
-    }    
-    
-    .Cookie2{
-        margin-left: 20px;
-    }
-    
-    .Ingredientes1{
-        width: 90%;
-        font-size: 15px;
-        margin-left: 20px;
-    }
-    
-    .Ingredientes2{
-        width: 90%;
-        font-size: 15px;
-        margin-left: 20px;
-    }
-    
-    .Receta1 {
-        margin-left: 50px;
-    }
-    
-    .Receta2 {
-        margin-left: 50px;
-    }
-    
-
-/*mainnosotros*/
-
-}
-.menu1{
-    font-size: 16px;
-}
-}
-
-
 @media only screen and (min-width: 992px){
     .navbar-expand-lg{
         flex-wrap: none;
