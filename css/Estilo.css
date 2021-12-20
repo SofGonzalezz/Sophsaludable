@@ -176,10 +176,13 @@ a {
     text-align: center;
     margin-top: 5px;
 }
-.cardcookie{
+.cardproducto{
     margin-bottom: 30px;
     border:none;
 }
+.cardproducto:hover{
+    transform: scale(1.2);
+ }
 .fotosproducto{
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     padding-top: 10px;
