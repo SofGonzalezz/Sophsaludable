@@ -1,0 +1,236 @@
+/*Variable color*/
+/*Variables tipografias*/
+/*for all pages*/
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/*header*/
+.contenedorHeader {
+  background-color: #E6332A;
+  width: 100%;
+  height: 30px; }
+  .contenedorHeader .Bienvenidos {
+    color: #FFFFFF;
+    font-family: "Open Sans SemiBold", sans-serif;
+    font-size: 15px;
+    padding-top: 3px;
+    text-align: center;
+    animation-name: titulo;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-play-state: running; }
+
+@keyframes titulo {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(-100%); } }
+
+.busqueda {
+  padding: 30px; }
+  .busqueda #botonbusqueda {
+    font-family: "Open Sans SemiBold", sans-serif;
+    font-size: 15px;
+    color: #57B89A;
+    border-color: #1F5458; }
+    .busqueda #botonbusqueda:hover {
+      font-family: "Open Sans SemiBold", sans-serif;
+      font-size: 15px;
+      color: #ffffff;
+      background-color: #1F5458;
+      border-color: #57B89A; }
+
+/*nav*/
+.logo {
+  width: 100px; }
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link {
+  color: #57B89A;
+  font-family: "Open Sans SemiBold", sans-serif; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #E6332A;
+  font-family: "Open Sans SemiBold", sans-serif; }
+
+.button:focus:not(:focus-visible) {
+  outline: 0px; }
+
+.navbar-toggler:focus {
+  text-decoration: none; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+/*footer*/
+.footergrande {
+  background-color: #57B89A; }
+  .footergrande .navegadorFooter {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footergrande .navegadorFooter .textonavegador {
+      font-family: "Open Sans SemiBold", sans-serif;
+      font-size: 15px;
+      color: #FFFFFF; }
+  .footergrande .linefooter {
+    line-height: 1.5px;
+    color: #FFFFFF; }
+  .footergrande .parrafoFooter {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footergrande .fab, .footergrande .far {
+    color: #ffffff; }
+  .footergrande .iconoredes {
+    font-size: 30px;
+    padding: auto; }
+  .footergrande .Copyright {
+    background-color: #1F5458; }
+
+/*mainindex*/
+.banner1 {
+  padding-bottom: 40px; }
+
+.indexfotos {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  margin-bottom: 30px; }
+  .indexfotos:hover {
+    transform: scale(1.2); }
+
+/*mainproductos*/
+.gif {
+  background-color: #57B89A;
+  margin-bottom: 50px; }
+
+.cardproducto {
+  margin-bottom: 30px;
+  border: none; }
+  .cardproducto:hover {
+    transform: scale(1.1); }
+  .cardproducto .card-text {
+    height: 30px;
+    color: #E6332A;
+    font-family: "Open Sans SemiBold", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px; }
+
+#fotosproducto {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  margin-bottom: 30px; }
+
+/*mainrecetas*/
+.cardreceta {
+  border-color: #57B89A;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px; }
+  .cardreceta:hover {
+    transform: scale(1.1); }
+
+.recetaTitulo {
+  color: #E6332A;
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 15px; }
+
+#botonreceta {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #57B89A;
+  border-color: #1F5458;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
+  #botonreceta:hover {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #1F5458;
+    border-color: #57B89A; }
+
+.Cookie {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  margin-bottom: 20px; }
+
+.nombreReceta {
+  color: #E6332A;
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 20px; }
+  .nombreReceta .Ingredientes {
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    list-style: circle; }
+
+.Receta {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+/*mainnosotros*/
+.Banner2 {
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0; }
+
+.Nosotros {
+  color: #E6332A;
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.Nosotrostext {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify; }
+
+/*maincontacto*/
+.Contact {
+  color: #E6332A;
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 20px; }
+
+.formtext {
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 15px;
+  margin-top: 15px; }
+
+.formboton {
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 15px;
+  color: #57B89A;
+  border-color: #1F5458;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
+  .formboton:hover {
+    font-family: "Open Sans SemiBold", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #1F5458;
+    border-color: #57B89A; }
+
+/*xsmall*/
+@media only screen and (max-width: 480px) {
+  .Contact {
+    font-size: 15px; } }

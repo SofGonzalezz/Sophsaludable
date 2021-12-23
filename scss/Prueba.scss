@@ -1,0 +1,302 @@
+@import "variables.scss";
+
+/*for all pages*/
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+/*header*/
+  
+.contenedorHeader {
+    background-color: $color-secundario;
+    width: 100%;
+    height: 30px;
+
+    .Bienvenidos {
+        color: #FFFFFF;
+        font-family: $font-primaria;
+        font-size: $font-sizesecundaria;
+        padding-top: 3px;
+        text-align: center;
+        animation-name: titulo;
+        animation-duration: 25s;
+        animation-timing-function: linear;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+
+        @keyframes titulo {
+            0% {
+              transform: translateX(100%);
+            }
+          
+            100% {
+              transform: translateX(-100%);
+            }
+        }
+    }
+}
+  
+.busqueda {
+    padding: 30px;
+    #botonbusqueda {
+        font-family: $font-primaria;
+        font-size: $font-sizesecundaria;
+        color: $color-primario;
+        border-color: $color-acento;
+      
+        &:hover {
+          font-family: $font-primaria;
+          font-size: $font-sizesecundaria;
+          color: #ffffff;
+          background-color: $color-acento;
+          border-color: $color-primario;
+        }
+      }
+}
+  
+/*nav*/
+.logo {
+    width: 100px;
+}  
+.navbar-light .navbar-nav {
+    .nav-link.active, .show .nav-link {
+      color: $color-primario;
+      font-family: $font-primaria;
+    }
+  
+    .nav-link {
+      color: $color-secundario;
+      font-family: $font-primaria
+    }
+}
+  
+.button:focus:not(:focus-visible) {
+    outline: 0px;
+}
+  
+.navbar-toggler:focus {
+    text-decoration: none;
+}
+  
+a {
+    text-decoration: none;
+    color: #000000;
+}
+  
+/*footer*/
+  
+.footergrande {
+    background-color:$color-primario;
+    .navegadorFooter {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .textonavegador {
+            font-family: $font-primaria;
+            font-size: $font-sizesecundaria;
+            color: #FFFFFF;
+          }
+        }
+        .linefooter {
+            line-height: 1.5px;
+            color: #FFFFFF;
+          }
+        .parrafoFooter {
+            font-family: $font-secundaria;
+            font-size: $font-sizesecundaria;
+            color: #FFFFFF;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fab, .far {
+            color: #ffffff;
+        }
+          
+        .iconoredes {
+            font-size: 30px;
+            padding: auto;
+        }
+        .Copyright {
+            background-color: $color-acento;
+          }
+}
+ 
+  /*mainindex*/
+  
+.banner1 {
+    padding-bottom: 40px;
+}
+  
+.indexfotos {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin-bottom: 30px;
+  
+    &:hover {
+      transform: scale(1.2);
+    }
+}
+  
+  /*mainproductos*/
+  
+.gif {
+    background-color: $color-primario;
+    margin-bottom: 50px;
+}
+.cardproducto {
+    margin-bottom: 30px;
+    border: none;
+  
+      &:hover {
+      transform: scale(1.1);
+      } 
+
+      .card-text {
+        height: 30px;
+        color: $color-secundario;
+        font-family: $font-primaria;
+        font-size: $font-sizesecundaria;
+        text-align: center;
+        margin-top: 5px;
+      }   
+}
+
+#fotosproducto {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+  
+/*mainrecetas*/
+.cardreceta {
+    border-color: #57B89A;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+
+        &:hover {
+        transform: scale(1.1);
+        } 
+  }
+
+.recetaTitulo {
+    color: $color-secundario;
+    font-family: $font-primaria;
+    font-size: $font-sizesecundaria;
+}
+
+#botonreceta {
+    font-family: $font-secundaria;
+    font-size:$font-sizesecundaria;
+    color: $color-primario;
+    border-color: $color-acento;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  
+    &:hover {
+      font-family: $font-secundaria;
+      font-size: $font-sizesecundaria;
+      color: #ffffff;
+      background-color: $color-acento;
+      border-color: $color-primario;
+    }
+}   
+.Cookie {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+ 
+.nombreReceta{
+    color: $color-secundario;
+    font-family: $font-primaria;
+    font-size: $font-sizeprimaria;
+        
+    .Ingredientes {
+        color: #000000;
+        font-family: $font-secundaria;
+        font-size: $font-sizesecundaria;
+        list-style: circle;
+    }
+}
+  
+.Receta {
+    color: #000000;
+    font-family: $font-secundaria;
+    font-size: $font-sizesecundaria;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /*mainnosotros*/
+  
+.Banner2 {
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+  
+.Nosotros {
+    color: $color-secundario;
+    font-family: $font-primaria;
+    font-size: $font-sizeprimaria;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+.Nosotrostext {
+    color: #000000;
+    font-family: $font-secundaria;
+    font-size: $font-sizesecundaria;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+  
+  /*maincontacto*/
+  
+.Contact {
+    color: $color-secundario;
+    font-family: $font-primaria;
+    font-size: $font-sizeprimaria;
+}
+  
+.formtext {
+    font-family: $font-primaria;
+    font-size: $font-sizesecundaria;
+    margin-top: 15px;
+}
+  
+.formboton {
+    font-family: $font-primaria;
+    font-size: $font-sizesecundaria;
+    color: $color-primario;
+    border-color: $color-acento;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  
+    &:hover {
+      font-family: $font-primaria;
+      font-size: $font-sizesecundaria;
+      color: #ffffff;
+      background-color: $color-acento;
+      border-color: $color-primario;
+    }
+}
+  
+  /*xsmall*/
+@media only screen and (max-width: 480px) {
+    .Contact {
+      font-size: 15px;
+    }
+}
