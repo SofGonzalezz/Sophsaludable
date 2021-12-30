@@ -1,5 +1,6 @@
 /*Variable color*/
 /*Variables tipografias*/
+/*Variable sombras*/
 /*for all pages*/
 .container-fluid {
   padding-left: 0;
@@ -13,12 +14,13 @@
 .contenedorHeader {
   background-color: #E6332A;
   width: 100%;
-  height: 30px; }
+  height: 40px; }
   .contenedorHeader .Bienvenidos {
-    color: #FFFFFF;
-    font-family: "Open Sans SemiBold", sans-serif;
+    font-family: "Open Sans SemiBold" sans-serif;
     font-size: 15px;
-    padding-top: 3px;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     animation-name: titulo;
     animation-duration: 25s;
@@ -43,33 +45,43 @@
     .busqueda #botonbusqueda:hover {
       font-family: "Open Sans SemiBold", sans-serif;
       font-size: 15px;
-      color: #ffffff;
-      background-color: #1F5458;
-      border-color: #57B89A; }
+      color: white;
+      border-color: #57B89A;
+      background-color: #1F5458; }
 
 /*nav*/
-.logo {
-  width: 100px; }
+nav {
+  background-color: white; }
+  nav #Navegador {
+    margin-left: 15px; }
+    nav #Navegador .navbar-toggler {
+      border-color: white; }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link {
-  color: #57B89A;
-  font-family: "Open Sans SemiBold", sans-serif; }
-
-.navbar-light .navbar-nav .nav-link {
-  color: #E6332A;
-  font-family: "Open Sans SemiBold", sans-serif; }
+#navbarNavDropdown {
+  justify-content: right; }
+  #navbarNavDropdown .nav-link .active {
+    color: #57B89A;
+    font-weight: 600; }
+  #navbarNavDropdown .nav-item {
+    padding: 0px 20px; }
+    #navbarNavDropdown .nav-item .nav-link {
+      color: #E6332A;
+      text-decoration: none;
+      font-size: 20px; }
+      #navbarNavDropdown .nav-item .nav-link:hover {
+        color: #57B89A;
+        font-weight: 600; }
 
 .button:focus:not(:focus-visible) {
-  outline: 0px; }
+  outline: 0; }
 
 .navbar-toggler:focus {
   text-decoration: none; }
 
-a {
-  text-decoration: none;
-  color: #000000; }
-
 /*footer*/
+a {
+  text-decoration: none; }
+
 .footergrande {
   background-color: #57B89A; }
   .footergrande .navegadorFooter {
@@ -137,7 +149,7 @@ a {
 /*mainrecetas*/
 .cardreceta {
   border-color: #57B89A;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px; }
   .cardreceta:hover {
     transform: scale(1.1); }
@@ -153,13 +165,13 @@ a {
   color: #57B89A;
   border-color: #1F5458;
   border-radius: 5px;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
   #botonreceta:hover {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
-    color: #ffffff;
-    background-color: #1F5458;
-    border-color: #57B89A; }
+    color: white;
+    border-color: #57B89A;
+    background-color: #1F5458; }
 
 .Cookie {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
@@ -170,16 +182,13 @@ a {
   color: #E6332A;
   font-family: "Open Sans SemiBold", sans-serif;
   font-size: 20px; }
-  .nombreReceta .Ingredientes {
+  .nombreReceta .Ingredientes, .nombreReceta .Receta {
     color: #000000;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     list-style: circle; }
 
 .Receta {
-  color: #000000;
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
   margin-left: 20px;
   margin-right: 20px; }
 
@@ -222,13 +231,13 @@ a {
   color: #57B89A;
   border-color: #1F5458;
   border-radius: 5px;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
   .formboton:hover {
     font-family: "Open Sans SemiBold", sans-serif;
     font-size: 15px;
-    color: #ffffff;
-    background-color: #1F5458;
-    border-color: #57B89A; }
+    color: white;
+    border-color: #57B89A;
+    background-color: #1F5458; }
 
 /*xsmall*/
 @media only screen and (max-width: 480px) {
