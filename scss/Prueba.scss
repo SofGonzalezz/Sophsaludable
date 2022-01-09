@@ -23,35 +23,19 @@
     height: 40px;
 
     .Bienvenidos {
-        @include titulos( "Open Sans SemiBold" sans-serif, 15px, #FFFFFF);
+        @include titulos( $font-primaria, $font-sizesecundaria, #FFFFFF);
         padding-top: 10px;
         padding-bottom: 10px;
         text-align: center;
-        animation-name: titulo;
-        animation-duration: 25s;
-        animation-timing-function: linear;
-        animation-direction: normal;
-        animation-iteration-count: infinite;
-        animation-play-state: running;
-
-        @keyframes titulo {
-            0% {
-              transform: translateX(100%);
-            }
-          
-            100% {
-              transform: translateX(-100%);
-            }
         }
-    }
 }
+
 @mixin boton ($font, $fsize, $fcolor, $borderc) {
   font-family: $font;
   font-size: $fsize;
   color: $fcolor;
   border-color: $borderc;
 }
-
 .busqueda {
     padding: 30px;
     #botonbusqueda {
@@ -69,10 +53,14 @@ nav{
   background-color: white;
   #Navegador{
     margin-left: 15px;
+       .navbar-toggler{
+        border-color: white;
+        color: white;
 
-    .navbar-toggler{
-      border-color: white;
+        &:focus{
+        box-shadow: 0
       }
+    }
   }
 }
 
@@ -110,8 +98,9 @@ justify-content: right;
 a{
   text-decoration: none;
 }
-.footergrande {
+#footergrande {
     background-color:$color-primario;
+
     .navegadorFooter {
         height: 100px;
         display: flex;
@@ -135,6 +124,9 @@ a{
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-left:15px;
+            padding-right:15px;
+            padding-bottom: 10px
         }
         .fab, .far {
             color: #ffffff;
@@ -142,24 +134,28 @@ a{
           
         .iconoredes {
             font-size: 30px;
-            padding: auto;
+            padding: 10px;
+
         }
         .Copyright {
             background-color: $color-acento;
+            text-align: center;
           }
 }
  
   /*mainindex*/
-  
 .banner1 {
     padding-bottom: 40px;
 }
-  
+.carousel-item{
+    margin-right:0
+  }
+
 .indexfotos {
     box-shadow: $sombra-1;
     padding: 10px;
     margin-bottom: 30px;
-  
+    
     &:hover {
       transform: scale(1.2);
     }
@@ -178,21 +174,18 @@ a{
       &:hover {
       transform: scale(1.1);
       } 
-
-      .card-text {
+    .card-text {
         height: 30px;
         color: $color-secundario;
         font-family: $font-primaria;
         font-size: $font-sizesecundaria;
         text-align: center;
         margin-top: 5px;
-      }   
+      }     
 }
-
-#fotosproducto {
-    box-shadow: $sombra-1;
-    padding: 10px;
-    margin-bottom: 30px;
+#fotosproducto{
+  box-shadow: $sombra-1;
+  padding: 10px;
 }
   
 /*mainrecetas*/
@@ -226,6 +219,7 @@ a{
     box-shadow: $sombra-1;
     padding: 10px;
     margin-bottom: 20px;
+    margin-top: 20px
 }
  
 .nombreReceta{
@@ -233,20 +227,26 @@ a{
     font-family: $font-primaria;
     font-size: $font-sizeprimaria;
         
+}
+.Subtituloreceta{ 
+  color: $color-primario;
+  font-family: $font-primaria;
+  font-size: $font-sizesecundaria;
+  
     .Ingredientes {
-        color: #000000;
-        font-family: $font-secundaria;
-        font-size: $font-sizesecundaria;
-        list-style: circle;
+      color: #000000;
+      font-family: $font-secundaria;
+      font-size: $font-sizesecundaria;
+      list-style: circle;
+    }
+    .Receta {
+      color: #000000;
+      font-family: $font-secundaria;
+      font-size: $font-sizesecundaria;
+      margin-left: 20px;
+      margin-right: 20px;
     }
 }
-  
-.Receta {
-    @extend .Ingredientes;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
   /*mainnosotros*/
   
 .Banner2 {
@@ -299,8 +299,8 @@ a{
 }
   
   /*xsmall*/
-@media only screen and (max-width: 480px) {
-    .Contact {
-      font-size: 15px;
-    }
+@media only screen and (max-width: 480px){
+  .contact{
+    font-size: 15px;
+  }
 }
