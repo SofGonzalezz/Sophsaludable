@@ -135,7 +135,6 @@ a{
         .iconoredes {
             font-size: 30px;
             padding: 10px;
-
         }
         .Copyright {
             background-color: $color-acento;
@@ -150,6 +149,14 @@ a{
 .carousel-item{
     margin-right:0
   }
+.tituloIndex{
+  @include titulos( $font-primaria, $font-sizeprimaria, $color-secundario);
+  margin-bottom: 15px;
+}
+.textoIndex{
+  @include titulos( $font-secundaria, $font-sizesecundaria, #000000);
+  margin-bottom: 25px;
+}
 
 .indexfotos {
     box-shadow: $sombra-1;
@@ -225,8 +232,7 @@ a{
 .nombreReceta{
     color: $color-secundario;
     font-family: $font-primaria;
-    font-size: $font-sizeprimaria;
-        
+    font-size: $font-sizeprimaria;       
 }
 .Subtituloreceta{ 
   color: $color-primario;
