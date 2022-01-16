@@ -12,7 +12,7 @@
 
 /*header*/
 .contenedorHeader {
-  background-color: #E6332A;
+  background-color: #57B89A;
   width: 100%;
   height: 40px; }
   .contenedorHeader .Bienvenidos {
@@ -50,9 +50,6 @@ nav {
 
 #navbarNavDropdown {
   justify-content: right; }
-  #navbarNavDropdown .nav-link .active {
-    color: #57B89A;
-    font-weight: 600; }
   #navbarNavDropdown .nav-item {
     padding: 0px 20px; }
     #navbarNavDropdown .nav-item .nav-link {
@@ -62,6 +59,9 @@ nav {
       #navbarNavDropdown .nav-item .nav-link:hover {
         color: #57B89A;
         font-weight: 600; }
+    #navbarNavDropdown .nav-item .active {
+      color: #57B89A;
+      font-weight: 600; }
 
 .button:focus:not(:focus-visible) {
   outline: 0; }
@@ -84,6 +84,10 @@ a {
       font-family: "Open Sans SemiBold", sans-serif;
       font-size: 15px;
       color: #FFFFFF; }
+      #footergrande .navegadorFooter .textonavegador:hover {
+        color: #1F5458; }
+    #footergrande .navegadorFooter .active {
+      color: #1F5458; }
   #footergrande .linefooter {
     line-height: 1.5px;
     color: #FFFFFF; }
@@ -260,3 +264,6 @@ a {
 @media only screen and (max-width: 480px) {
   .contact {
     font-size: 15px; } }
+
+.body {
+  overflow-x: hidden; }

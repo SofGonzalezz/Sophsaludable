@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
 }
-  
 /*header*/
 @mixin titulos ($fuente, $tamanofuente, $color){
   font-family: $fuente;
@@ -18,7 +17,7 @@
   color:$color
 }
 .contenedorHeader {
-    background-color: $color-secundario;
+    background-color: $color-primario;
     width: 100%;
     height: 40px;
 
@@ -66,10 +65,7 @@ nav{
 
 #navbarNavDropdown{
 justify-content: right;
-  .nav-link .active{
-    color:$color-primario;
-    font-weight: 600;
-  }
+ 
    .nav-item{
      padding: 0px 20px;
 
@@ -83,6 +79,10 @@ justify-content: right;
         font-weight: 600;
       }
      }
+     .active{
+      color:$color-primario;
+      font-weight: 600;
+    }
     }
 }
 
@@ -110,13 +110,20 @@ a{
             font-family: $font-primaria;
             font-size: $font-sizesecundaria;
             color: #FFFFFF;
-          }
+
+            &:hover{
+              color: $color-acento;
+            }
+        }  
+        .active{
+          color: $color-acento;
         }
-        .linefooter {
+    } 
+    .linefooter {
             line-height: 1.5px;
             color: #FFFFFF;
-          }
-        .parrafoFooter {
+    }
+    .parrafoFooter {
             font-family: $font-secundaria;
             font-size: $font-sizesecundaria;
             color: #FFFFFF;
@@ -127,19 +134,19 @@ a{
             padding-left:15px;
             padding-right:15px;
             padding-bottom: 10px
-        }
-        .fab, .far {
+    }
+    .fab, .far {
             color: #ffffff;
-        }
+    }
           
-        .iconoredes {
+    .iconoredes {
             font-size: 30px;
             padding: 10px;
-        }
-        .Copyright {
+    }
+    .Copyright {
             background-color: $color-acento;
             text-align: center;
-          }
+    }
 }
  
   /*mainindex*/
@@ -310,3 +317,6 @@ a{
     font-size: 15px;
   }
 }
+.body {
+  overflow-x:hidden
+} 
